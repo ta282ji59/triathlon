@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @media (max-width: 1221px) {
   /*スマホ時の表示*/
+  .news {
+    font-size: 70%;
+  }
 }
 main img {
   width: 80%;
