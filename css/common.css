@@ -16,7 +16,7 @@ header h1 a {
     /*スマホ時の表示*/
   }
   header h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   header .display_PC_header li {
     display: none;
