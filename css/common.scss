@@ -15,10 +15,12 @@ header {
     }
 
     @media (max-width: 1221px) {
+
         /*スマホ時の表示*/
-        h1{
-            font-size: 25px;
+        h1 {
+            font-size: 15px;
         }
+
         .display_PC_header {
             li {
                 display: none;
@@ -178,7 +180,6 @@ nav.globalMenuSp.disabled {
 
 main {
     background-color: #FFF5EE;
-
     h2 {
         display: inline-block;
         padding: 0.4em 1.0em;
@@ -190,13 +191,24 @@ main {
         margin-bottom: 5px;
     }
 
-    .main-content {
-        padding-left: 150px;
+    @media (min-width: 1222px) {
 
-        p {
-            padding-left: 20px;
+        /*パソコン時の表示1222*/
+        .main-content {
+            padding-left: 150px;
+
+            p {
+                padding-left: 20px;
+            }
         }
     }
+
+    @media (max-width: 1221px) {
+        /*スマホ時の表示*/
+    }
+
+
+
 }
 
 
@@ -210,10 +222,12 @@ footer {
     }
 
     @media (max-width: 1221px) {
+
         /*スマホ時の表示*/
-        li{
+        li {
             list-style: none;
         }
+
         a {
             color: black;
             text-decoration: none;
