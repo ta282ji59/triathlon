@@ -1,0 +1,13 @@
+main img {
+  width: 80%;
+  height: 80%;
+  margin-top: 10px;
+}
+main .news {
+  overflow: scroll;
+  max-height: 100px;
+  width: 80%;
+}
+main ul li {
+  list-style: none;
+}/*# sourceMappingURL=style-index.css.map */
