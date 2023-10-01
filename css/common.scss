@@ -15,8 +15,10 @@ header {
     }
 
     @media (max-width: 1221px) {
-
         /*スマホ時の表示*/
+        h1{
+            font-size: 30px;
+        }
         .display_PC_header {
             li {
                 display: none;
