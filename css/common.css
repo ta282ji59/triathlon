@@ -16,7 +16,7 @@ header h1 a {
     /*スマホ時の表示*/
   }
   header h1 {
-    font-size: 80%;
+    font-size: 140%;
   }
   header .display_PC_header li {
     display: none;
@@ -183,7 +183,10 @@ main h2 {
     /*スマホ時の表示*/
   }
   main h2 {
-    font-size: 80%;
+    font-size: 120%;
+  }
+  main p {
+    font-size: 90%;
   }
 }
 
@@ -203,6 +206,9 @@ footer h1 {
   footer a {
     color: black;
     text-decoration: none;
+  }
+  footer #foot p {
+    font-size: 80%;
   }
 }
 @media (min-width: 1222px) {
