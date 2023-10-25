@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアスロン部</title>
+
+<link href="../../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="body">
+
+<h1>会津大学トライアスロン部</h1>
+<iframe src="../../head.html" class="head" frameborder="0" scrolling="no">
+お使いのブラウザは対応しておりません。
+</iframe>
+
+<div id="side_menu">
+<h2><a href="../practice.html" target="_parent">■練習TOP</a></h2>
+</div>
+
+<div id="contents">
+<h3>2018  部活内容</h3>
+
+<ul>
+<h4>2018年8月</h4>
+<hr>
+<style>/*　スタイルの中はコメントアウト！
+*/</style>
+
+<hr>
+<li>7/30~8/8: テスト週間</li>
+<li>8/9(Thr) :<a href="swim/0809.html" target="_parent">スイム練[100m interval]</li>
+<li>8/10(Fri) :<a href="run/0810.html" target="_parent">ラン練[jog]</a></li>
+<li>8/11~13:合宿</li>
+<hr>
+
+<hr>
+<Li>8/13(Mon) :合宿</li>
+<Li>8/14(Tue) :<a href="swim/0814.html" target="_parent">スイム練[descending]</a>/<a href="bike/0814.html" target="_parent">バイク練[ゴールドライン]</a></li>
+<Li>8/16(Thr) :<a href="swim/0816.html" target="_parent">スイム練[ラクテート]</a></li>
+<Li>8/17(Fri) :<a href="run/0817.html" target="_parent">ラン練[1000m interval走]</a></li>
+<li>8/18(Sut) :<a href="bike/0818.html" target="_parent">バイク練[ゴールドライン]</a></li>
+<hr>
+
+
+<hr>
+<Li>8/20(Mon) :<a href="run/0820.html" target="_parent">ラン練[build-up走]</a></li>
+<Li>8/21(Tue) :<a href="swim/0821.html" target="_parent">スイム/バイク練[うつくしま下見]</a></li>
+<Li>8/23(Thr) :<a href="swim/0823.html" target="_parent">スイム練[100m forming]</a></li>
+<Li>8/24(Fri) :<a href="run/0824.html" target="_parent">ラン練[jog]</a></li>
+<li>8/25~26 :うつくしまトライアスロン</li>
+<hr>
+
+<hr>
+<Li>8/27~29: rest</li>
+<Li>8/30(Thr) :<a href="swim/0830.html" target="_parent">スイム練[descending]</a></li>
+<Li>8/31(Fri) :<a href="run/0831.html" target="_parent">ラン練[TT]</a></li>
+<hr>
+ 
+
+
+
+<hr>
+
+</ul>
+</div>
+<div id="footer">
+Copyright &copy; 2018 University of Aizu Triathlon Team, All Rights Reserved.
+</div>
+</body>
+</html>

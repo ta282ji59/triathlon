@@ -4,7 +4,7 @@ body {
     // margin: 0vh 10vh;
 }
 
-header {
+body {
     h1 {
         text-align: center;
 
@@ -33,6 +33,14 @@ header {
         /*パソコン時の表示1222*/
         padding: 1vh 150px 0vh 150px;
 
+        // .container {
+        //     position: fixed;
+        //     top: 50%;
+        //     right: 20px;
+        //     transform: translateY(-50%);
+        //     text-align: right;
+        //     padding-right: 20px;
+        // }
 
         .nav-list {
             text-align: center;
@@ -59,6 +67,10 @@ header {
     }
 
 }
+
+
+
+
 
 /**/
 .hamburger {
@@ -180,6 +192,7 @@ nav.globalMenuSp.disabled {
 
 main {
     background-color: #FFF5EE;
+
     h2 {
         display: inline-block;
         padding: 0.4em 1.0em;
@@ -204,11 +217,13 @@ main {
     }
 
     @media (max-width: 1221px) {
+
         /*スマホ時の表示*/
-        h2{
+        h2 {
             font-size: 120%;
         }
-        p{
+
+        p {
             font-size: 90%;
         }
     }
@@ -238,8 +253,9 @@ footer {
             color: black;
             text-decoration: none;
         }
-        #foot{
-            p{
+
+        #foot {
+            p {
                 font-size: 80%;
             }
         }

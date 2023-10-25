@@ -40,3 +40,9 @@ $p_foot.style.color = "white";
 $p_foot.style.textAlign = "center";
 $p_foot.textContent = "Copyright © 2023 University of Aizu Triathlon Team, All Rights Reserved.";
 $foot.appendChild($p_foot);
+
+// const $div = document.createElement('div');
+// $div.classList.add('container');
+// $div.appendChild($a_insta);
+// $div.appendChild($a_twi);
+// document.body.appendChild($div);

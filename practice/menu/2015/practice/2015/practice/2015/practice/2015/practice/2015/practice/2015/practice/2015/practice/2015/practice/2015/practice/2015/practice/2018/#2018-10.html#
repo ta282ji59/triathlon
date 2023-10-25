@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアスロン部</title>
+
+<link href="../../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="body">
+
+<h1>会津大学トライアスロン部</h1>
+<iframe src="../../head.html" class="head" frameborder="0" scrolling="no">
+お使いのブラウザは対応しておりません。
+</iframe>
+
+<div id="side_menu">
+<h2><a href="../practice.html" target="_parent">■練習TOP</a></h2>
+</div>
+
+<div id="contents">
+<h3>2018  部活内容</h3>
+
+<ul>
+<h4>2018年10月</h4>
+<hr>
+<style>/*　スタイルの中はコメントアウト！
+*/</style>
+
+<hr>
+<Li>10/1(Mon) :<a href="run/1001.html" target="_parent">ラン練[jog]</a></li>
+<Li>10/2(Tue) :<a href="swim/1002.html" target="_parent">スイム練[中距離泳]</a></li>
+<Li>10/4(Thr) :<a href="swim/1004.html" target="_parent">スイム練[100m interval]</a></li>
+<Li>10/5(Fri) :蒼翔祭準備</li>
+<li>10/6〜7:蒼翔祭</li>
+<hr>
+
+
+<hr>
+<Li>10/8(Mon) :体育の日</li>
+<Li>10/9(Tue) :<a href="swim/1009.html" target="_parent">スイム練[100m decending]</a></li>
+<Li>10/11(Thr) :<a href="swim/1011.html" target="_parent">スイム練[200m interval]</a></li>
+<Li>10/12(Fri) :<a href="run/1012.html" target="_parent">ラン練[jog]</a></li>
+<li>10/13(Sut) ：紅翔祭</li>
+<hr>
+
+<hr>
+<Li>10/15(Mon) :<a href="run/1015.html" target="_parent">ラン練[build-up走]</a></li>
+<Li>10/16(Tue) :<a href="swim/1016.html" target="_parent">スイム練[100m forming]</a></li>
+<Li>10/18(Thr) :<a href="swim/1018.html" target="_parent">スイム練[100m hypo]</a></li>
+<Li>10/19(Fri) :<a href="run/1019.html" target="_parent">ラン練[ペース走]</a></li>
+<li>10/20(Sut) ：<a href="bike/1020.html" target="_parent">バイク練[ゴールドライン]</a></li>
+<hr>
+
+
+<hr>
+<Li>10/22(Mon) :<a href="run/1022.html" target="_parent">ラン練[jog]</a></li>
+<Li>10/23(Tue) :<a href="swim/1023.html" target="_parent">スイム練[1500m泳]</a></li>
+<Li>10/25(Thr) :<a href="swim/1025.html" target="_parent">スイム練[100m easy-hard]</a></li>
+<Li>10/26(Fri) :<a href="run/1026.html" target="_parent">ラン練[interval走]</a></li>
+<li>10/27(Sut) ：<a href="bike/1027.html" target="_parent">バイク練[東山ダム]</a></li>
+<hr>
+
+<hr>
+<Li>10/29(Mon) :<a href="run/1029.html" target="_parent">ラン練[jog]</a></li>
+<Li>10/30(Tue) :<a href="swim/1016.html" target="_parent">スイム練[750m TT]</a></li>
+<hr>
+
+
+
+<hr>
+
+</ul>
+</div>
+<div id="footer">
+Copyright &copy; 2018 University of Aizu Triathlon Team, All Rights Reserved.
+</div>
+</body>
+</html>

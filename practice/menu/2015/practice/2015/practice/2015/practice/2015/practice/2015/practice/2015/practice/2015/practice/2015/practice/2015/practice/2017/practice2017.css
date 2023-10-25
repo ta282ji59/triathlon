@@ -1,0 +1,338 @@
+
+/* ------------------------------------------------------------
+ *  ./*.html 基本設定
+ * ------------------------------------------------------------ */
+#body {
+	width:950px;/**/
+	margin:-15px 0 10px 50px;
+	padding:20px 15px 20px 23px;
+	background-color:#7fff7f;
+	border-width:1px 2px 1px 3px;
+	border-style:solid;
+	border-color:#00ff7f;
+}
+a:link, a:visited, a:hover {
+	color:#0000cd;
+	text-decoration: none;
+}
+a:link.secret, a:visited.secret, a:hover.secret {
+	color:#E6E6FA;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul{
+	list-style:square;
+	color:#000080;
+}
+li{
+	margin:5px 0;
+}
+table{
+	margin:10px 0 0 20px
+}
+caption{
+	color:#000080;
+	font-size:15px;
+	margin:10px 0 -8px 20px;
+	text-align:left;	
+}
+th, tr, td{
+	padding:3px;
+	color:#000080;
+	word-break:break-all;
+}
+p{
+	color:#000080;
+	font-size:15px;
+	margin:15px 10px 0px 20px;
+	word-break:break-all;
+}
+h1, h2, h3, h4, h5{
+	border-color:#0000ff;
+	color:#0000cd;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./*.html 上部のタイトル(会津大学トライアスロン部)
+ * ------------------------------------------------------------ */
+h1{
+	text-align:center;
+	border-right:430px solid;
+	border-left:30px solid;
+	margin:10px 10px 5px 0;
+	padding:0 10px;
+	font-family:Arial, "Arial Bold", "ＭＳ ゴシック";
+}
+
+/*font-family:font-family: Arial, "Arial Bold", "ＭＳ ゴシック";*/
+
+
+
+/* ------------------------------------------------------------
+ * index.html 左部の英語のメニュー
+ * ------------------------------------------------------------ */
+h2{
+	width:180px;
+	border-style:solid;
+	border-width:1px 2px 1px 4px;
+	font-size:18px;
+	margin:0 8px 8px 0 ;
+	padding:4px 0 1px 10px;
+	background-color:#ffffff;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./*.html 見出し
+ * ------------------------------------------------------------ */
+h3{
+	width:95%;
+	font-weight:bold;
+	font-family:sans-serif;
+	margin:0;
+	padding:2px 0 1px 10px;
+	border-left:solid 20px;
+	border-bottom:solid 1px;
+	background-color:#FFFFFF;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./*.html 小見出し
+ * ------------------------------------------------------------ */
+h4{
+	margin:15px 0px 5px 15px;
+	padding:5px 0 1px 5px;
+	font-size:15px;
+	border-bottom:3px double;
+	color:#000080;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./report/* 学年
+ * ------------------------------------------------------------ */
+h5{
+	background-color:#ffffff;
+	font-size:14px;
+	border:1px solid;
+	padding:0 5px 0 5px;
+}
+
+
+
+
+
+
+.nest{
+	margin:20px 0px 5px 20px;
+}
+
+
+pre{
+	font-size:14px;
+	margin:10px 0 0 20px;
+	color:#000080;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * *.html フレームのレイアウト
+ * ------------------------------------------------------------ */
+iframe.head{
+	height:50px;
+	width:100%;
+	overflow:hidden;
+}
+iframe.main{
+	width:100%;
+	overflow-y:auto;
+}
+iframe.left{
+	float:left;
+	width:223px;
+	height:830px;/**/
+	overflow-y:auto;
+}
+iframe.right{
+	float:left;
+	margin:0 -10px;
+	width:730px;/**/
+	height:1200px;
+	overflow-y:auto;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./*.html 上部のメニュー
+ * ------------------------------------------------------------ */
+#head_menu{
+	width: 900px;/**/
+	font-size:12px;
+	border-bottom:solid 1px;
+	border-left:solid 40px;
+	padding:3px 0 0 0;
+	background-color:#ffffff;
+	text-align:left;
+	border-color:#0000ff;
+	color:#4169e1;
+	margin:-31px 0 10px -10px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * index.html 写真
+ * ------------------------------------------------------------ */
+#logo{
+	width:938px;/**/
+	margin:-10px 0 0 0;
+	padding:8px 7px 6px 0;
+}
+#logo img{
+	border:2px solid #0000ff;
+}
+
+
+
+
+/* ------------------------------------------------------------
+ * index.html 左部英語のメニュー レイアウト
+ * ------------------------------------------------------------ */
+#side_menu{ 
+	float:left;
+	width:203px;
+	margin:10px 20px 20px 0;
+}
+#side_menu h5{
+	margin:10px 15px 5px -10px;
+}
+#side_menu.frame{
+	margin:-20px 20px 20px 0;
+}
+#side_menu p{
+	width:170px;
+	white-space:normal;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * index.html 更新履歴(お知らせ) レイアウト
+ * ------------------------------------------------------------ */
+#contents{
+	float:left;
+	width:690px;/**/
+	margin:10px -35px 10px 0;
+	padding:5px 15px 50px 10px;
+	border-left:1px solid #4169e1;
+	border-right:1px solid #4169e1;
+}
+#contents h5{
+	margin:10px 30px 5px 23px;
+	
+}
+#contents.frame{
+	margin:-27px -35px 10px 0;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * about.html レイアウト
+ * members.html レイアウト
+ * bbs.html レイアウト
+ * link.html レイアウト
+ * ------------------------------------------------------------ */
+#main{
+	width:890px;/**/
+	margin:0 0 0 1px;
+	padding:5px 23px 50px 23px;
+	border-color:#4169e1;
+	border-left:solid 1px;
+	border-right:solid 1px;
+}
+#main td{
+	border-bottom:1px solid #B0C4DE;
+}
+#main th{
+	border-bottom:1px solid #B0C4DE;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./photo/* 写真の枠
+ * ------------------------------------------------------------ */
+img.photo{
+	width:160px;
+	padding:5px 8px;
+	margin:8px 9px 3px 9px;
+	border-top:1px solid #4169e1;
+	border-bottom:1px solid #4169e1;
+	border-left:0;
+	border-right:0;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./photo/* 写真のコメント
+ * ------------------------------------------------------------ */
+td.comment{
+	padding:0 5px 10px 15px;
+	width:160px;
+	word-break:break-all;
+	font-size:14px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+ * ./*.html フッタ(下部のコピーライト)
+ * ------------------------------------------------------------ */
+#footer{
+	clear:left;
+	width:870px;/**/
+	padding:0 10px;
+	margin:10px 0 -10px 0;
+	text-align:right;
+	border-bottom:solid 1px;
+	border-right:solid 50px;
+	border-color:#0000ff;
+	background-color:#FFFFFF;
+	color:#000080;
+}

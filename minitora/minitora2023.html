@@ -4,10 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="google-site-verification" content="tbJDLE558ZKldrNDYl0OPTidWHDJoyXMbn0S4ZLPQKQ" />
+    <link rel="icon" href="../image/image.png">
+    <title>第15回ミニトライアスロンin会津大学</title>
+    <meta name="Keywords" content="会津大学,トライアスロン,ミニトライアスロン,ミニトラ">
+    <meta name="Description"
+        content="第15回ミニトライアスロンin会津大学の公式ホームページです。会津大学では毎年開催されるこのイベントに、多くの方々をお招きしています。スイム、バイク、ランという3つの競技を楽しみながら、トライアスロンの魅力を体感しましょう。初心者から上級者まで、どなたでも参加できる楽しいイベントです。ぜひご参加いただき、トライアスロンの興奮と友情に溢れた素晴らしい体験を共有しましょう。">
+    <link href="../css/common.css" rel="stylesheet">
+    <style>
+        .point-box {
+            position: relative;
+            border: 2px solid rgb(83, 226, 248);
+            /* 枠の太さ・種類・色 */
+            border-radius: 4px;
+            /* 枠の丸み */
+            margin: 1.8em 1em;
+            /* 枠外の余白 */
+            padding: 5px 15px;
+        }
+
+        .point-title {
+            position: absolute;
+            padding: 0 0.5em;
+            left: 30px;
+            color: #555555;
+            /* タイトルの文字色 */
+            font-weight: bold;
+            font-size: 0.9em;
+            /* タイトルの文字サイズ */
+            background-color: #FFF5EE;
+        }
+
+        .pos_phone {
+            display: none;
+        }
+
+        @media (max-width: 1221px) {
+
+            /*スマホ時の表示*/
+            .pos_pc {
+                display: none;
+            }
+
+            .pos_phone {
+                display: block;
+            }
+
+            .main {
+                font-size: 30%;
+            }
+
+            .point-box {
+                font-size: inherit;
+            }
+        }
+
+        @media (min-width: 1222px) {
+            
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
         <div id="head">
             <script src="js/header.js"></script>
@@ -17,90 +82,73 @@
     </header>
     <main>
         <h2>第15回ミニトライアスロンin会津大学</h2>
-        <!-- <table style="page-break-before: always;" cellpadding="2" cellspacing="2" width="100%">
-                <tbody>
-                    <tr>
-                        <td bgcolor="#0000cc" align="center">
-                            <font color="#ffffff" size="6">第15回</font><br><br>
-                            <font color="#ffffff" size="6">ミニトライアスロン in 会津大学</font><br><br>
-                            <font color="#ff0000" size="7">
-                                <blink>開催決定</blink>
-                            </font><br>
-                        </td>
-                    </tr>
-                </tbody>
-            </table> -->
+        <!-- <table style="page-break-before: always; margin-left: 10%; margin-right: 10%;" cellpadding="2" cellspacing="2"
+            width="80%">
+            <tbody>
+                <tr>
+                    <td bgcolor="#0000cc" align="center">
+                        <h1 style="color:#ffffff;">第15回</h1>
+                        <h1 style="color:#ffffff;">ミニトライアスロン in 会津大学</h1>
+                        <h1 style="color:#ff0000;">開催決定</h1>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="open_entry">
+            <h4>ミニトライアスロンin会津大学開催決定しました!</h4>
+            <p>
+                下に大会の概要を更新いたしました。ダウンロードの欄に大会要項、誓約書、申込書を載せましたのでご確認ください。<br>
+                今年もミニトライアスロンin会津大学をよろしくお願いします!<br>
+                <font>申し込み開始日は令和5年6月12日(月)です。</font><br>
+                <font color="red">なお、申し込み締め切りは<strong>令和5年9月6日(水)</strong>までとなっています。</font><br>
+            </p>
+            <br>
+        </div>
 
+        <div id="closed_entry">
+            <font><strong>第15回ミニトライアスロンin会津大学の応募を終了致しました。</strong></font>
+            <p>
+                たくさんのご応募ありがとうございました。<br>
+                <font color="red"><strong>参加費振込みの締め切りが9/8(金)までとなっております。</strong></font><br>
+                まだ振込みがお済みでない方はお早めにお済ませになりますようお願い致します。<br>
+                <u style="color: rgb(181, 21, 21);">
+                    遅くとも<strong>9/8の14:00まで</strong>に参加費の振り込みを完了しない場合、参加を取り消すことがございますので、ご注意ください。
+                </u><br>
+                大会当日の支払いには対応できません。<br>
+                <strong>また、誓約書の提出がない方も大会には参加できません。当日の受付時までに記入の上持参してください。</strong><br>
+                ご理解とご協力どうぞよろしくお願い致します。<br>
+                コースマップと競技規則を掲載してありますので大会当日までにご確認ください。
+            </p>
+            <a href="2023/2023コース図.pdf" style="color: green;"><strong>・コースマップ</a><br></strong>
+            <a href="2023/2023競技規則.pdf" style="color: green;"><strong>・競技規則</a><br></strong>
+            <p>※こちらは2023/09/12時点で決まった内容です。状況次第では変更となる可能性がございます。</p>
+            <hr>
+            <font><strong>大会開催の連絡について</strong></font>
+            <p>
+                ◯開催競技に関して<br>
+                ・晴れ、小雨の場合<br>
+                →ミニトライアスロン<br>
+                ・大雨の場合<br>
+                →アクアスロンに変更<br>
 
-        <!-- <div id="open_entry">
-                <h4>ミニトライアスロンin会津大学開催決定しました!</h4>
-                <p>数年、コロナウイルスの関係で中止となっていたミニトライアスロンin会津大学が今年は開催決定となりました!<br>
-                    下に大会の概要を更新いたしました。ダウンロードの欄に大会要項、誓約書、申込書を載せましたのでご確認ください。<br>
-                    今年もミニトライアスロンin会津大学をよろしくお願いします!<br>
-                    <font size="5">申し込み開始日は令和5年6月12日(月)です。</font><br>
-                    <font size="5" color="red">なお、申し込み締め切りは<strong>令和5年9月6日(水)</strong>までとなっています。</font><br>
-                </p>
-                <br>
-                <div class="pos_pc" style="text-align: center;"><img src="2023/poster.jpg" width="400" height="566"></div>
-                <div class="pos_phone" style="text-align: center;"><img src="2023/poster.jpg" width="80%"></div>
-            </div> -->
-        <!-- <div id="closed_entry">
-                <font size="5"><strong>第15回ミニトライアスロンin会津大学の応募を終了致しました。</strong></font>
-                <p>
-                    たくさんのご応募ありがとうございました。<br>
-                    <font size="5" color="red"><strong>参加費振込みの締め切りが9/8(金)までとなっております。</strong></font><br>
-                    まだ振込みがお済みでない方はお早めにお済ませになりますようお願い致します。<br>
-                    <u style="color: rgb(181, 21, 21);">
-                        遅くとも<strong>9/8の14:00まで</strong>に参加費の振り込みを完了しない場合、参加を取り消すことがございますので、ご注意ください。
-                    </u><br>
-                    大会当日の支払いには対応できません。<br>
-                    <strong>また、誓約書の提出がない方も大会には参加できません。当日の受付時までに記入の上持参してください。</strong><br>
-                    ご理解とご協力どうぞよろしくお願い致します。<br>
-                    コースマップと競技規則を掲載してありますので大会当日までにご確認ください。
-                </p>
-                <a href="2023/2023コース図.pdf" style="color: green;"><strong>・コースマップ</a><br></strong>
-                <a href="2023/2023競技規則.pdf" style="color: green;"><strong>・競技規則</a><br></strong>
-                <p>※こちらは2023/09/12時点で決まった内容です。状況次第では変更となる可能性がございます。</p>
-                <hr>
-                <font size="5"><strong>大会開催の連絡について</strong></font>
-                <p>
-                    ◯開催競技に関して<br>
-                    ・晴れ、小雨の場合<br>
-                    →ミニトライアスロン<br>
-                    ・大雨の場合<br>
-                    →アクアスロンに変更<br>
-    
-                </p>
-                <div class="pos_pc" style="text-align: center;"><img src="2023/poster.jpg" width="400" height="566"></div>
-                <div class="pos_phone" style="text-align: center;"><img src="2023/poster.jpg" width="80%"></div>
-            </div> -->
+            </p>
+            <div class="pos_pc" style="text-align: center;"><img src="2023/poster.jpg" width="400" height="566">
+            </div>
+            <div class="pos_phone" style="text-align: center;"><img src="2023/poster.jpg" width="80%"></div>
+        </div> -->
         <div id="end_pat">
-            <font color="red" size="8">たくさんのご参加ありがとうございました！<br></font>
-            <font size="5">
+            <h4 style="color:red;">たくさんのご参加ありがとうございました！</h4>
+            <font>
                 ボランティアの方をはじめ、選手や応援の方々のおかげで無事終えることができました!<br>
                 来年も開催を検討しているのでその時は是非ご参加お待ちしております‼️<br>
             </font>
-            <font size="3">
+            <font>
                 リザルトをサイト下部に設置いたしました。是非ご覧ください。<br>
 
-                →<a href="#result">ページ下部に移動する</a>
+                →<a href="#result" style="color: blue;">ページ下部に移動する</a>
             </font>
-            <p>※何か質問等がございましたら、<a href="../mail.html">こちら</a>へどうぞ</p>
+            <p>※何か質問等がございましたら、<a href="../inquiry.html" style="color: blue;" >こちら</a>へどうぞ</p>
         </div>
-        <script>
-            const open_entry = document.getElementById('open_entry')
-            open_entry.style.display = "block";
-            const closed_entry = document.getElementById('closed_entry')
-            closed_entry.style.display = "none";
-            const today = new Date()
-            if ((today.getFullYear() >= 2023 && today.getMonth() + 1 >= 9 && today.getDate() > 6)) {
-                open_entry.style.display = "none";
-                closed_entry.style.display = "block";
-            }
-
-
-        </script>
-
 
         <div class="point-box">
             <div class="point-title" style="top: -30px;">
@@ -302,12 +350,12 @@
             </div>
             <p></p>
             <ul>
-                <li><a href="2023/要項.pdf">・ 大会要項（要項.pdf）</a></li>
-                <li><a href="2023/誓約書.pdf">・誓約書（誓約書.pdf）</a></li>
-                <li><a href="2023/個人申し込み.pdf">・個人申込書（個人申し込み.pdf）</a></li>
-                <li><a href="2023/リレー申し込み.pdf">・リレー申込書（リレー申し込み.pdf）</a></li>
-                <!-- <li><a href="2023/健康観察.pdf">・健康観察シート（健康観察.pdf）</a></li> -->
-                <!-- <li><a href="map.pdf">・コースマップ（map.pdf）</a></li> -->
+                <li><a href="2023/要項.pdf"> 大会要項（要項.pdf）</a></li>
+                <li><a href="2023/誓約書.pdf">誓約書（誓約書.pdf）</a></li>
+                <li><a href="2023/個人申し込み.pdf">個人申込書（個人申し込み.pdf）</a></li>
+                <li><a href="2023/リレー申し込み.pdf">リレー申込書（リレー申し込み.pdf）</a></li>
+                <!-- <li><a href="2023/健康観察.pdf">健康観察シート（健康観察.pdf）</a></li> -->
+                <!-- <li><a href="map.pdf">コースマップ（map.pdf）</a></li> -->
             </ul>
             <p></p>
         </div>
@@ -317,15 +365,22 @@
             </div>
             <p></p>
             <ul>
-                <li><a href="result/2007年~2019年の記録.pdf">・第1回(2007年)〜第13回(2019年)までの一般の部等の記録</a></li>
-                <li><a href="result/小学生/2009年~2019年の記録.pdf">・第3回(2007年)〜第13回(2019年)までの小学生の部の記録</a></li>
-                <li><a href="result/2022年の記録.pdf">・第14回 - 2022 (一般・リレーの部)</a></li>
-                <li><a href="result/小学生/2022年の記録.pdf">・第14回 - 2022 (小学生の部)</a></li>
-                <li><a href="result/2023年の記録.pdf">・第15回 - 2023 (一般・リレーの部)</a></li>
-                <li><a href="result/小学生/2023年の記録.pdf">・第15回 - 2023 (小学生の部)</a></li>
+                <li><a href="result/2007年~2019年の記録.pdf">第1回(2007年)〜第13回(2019年)までの一般の部等の記録</a></li>
+                <li><a href="result/小学生/2009年~2019年の記録.pdf">第3回(2007年)〜第13回(2019年)までの小学生の部の記録</a></li>
+                <li><a href="result/2022年の記録.pdf">第14回 - 2022 (一般・リレーの部)</a></li>
+                <li><a href="result/小学生/2022年の記録.pdf">第14回 - 2022 (小学生の部)</a></li>
+                <li><a href="result/2023年の記録.pdf">第15回 - 2023 (一般・リレーの部)</a></li>
+                <li><a href="result/小学生/2023年の記録.pdf">第15回 - 2023 (小学生の部)</a></li>
             </ul>
             <p></p>
         </div>
+        <br>
+    </main>
+    <footer>
+        <div id="foot">
+            <script src="js/footer.js"></script>
+        </div>
+    </footer>
 </body>
 
 </html>

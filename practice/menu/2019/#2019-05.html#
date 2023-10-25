@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアスロン部</title>
+
+<link href="../../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="body">
+
+<h1>会津大学トライアスロン部</h1>
+<iframe src="../../head.html" class="head" frameborder="0" scrolling="no">
+お使いのブラウザは対応しておりません。
+</iframe>
+
+<div id="side_menu">
+<h2><a href="../practice.html" target="_parent">■練習TOP</a></h2>
+</div>
+
+<div id="contents">
+<h3>2019  部活内容</h3>
+
+<ul>
+<h4>2019年5月</h4>
+<hr>
+<style>/*　スタイルの中はコメントアウト！
+*/</style>
+
+
+<hr>
+<Li>5/2(Thr) :<a href="run/0502.html" target="_parent">ラン練[ペース走]</a></li>
+<Li>5/3(Fri) :<a href="bike/0503.html" target="_parent">バイク練[強清水]</a></li>
+<li>5/4(Sat) :<a href="bike/0504.html" target="_parent">バイク練[東山ダム]</a></li>
+<hr>
+
+<hr>
+<Li>5/6(Mon) :ロングライド</li>
+<Li>5/7(Tue) :<a href="swim/0507.html" target="_parent">スイム練[forming]</a></li>
+<Li>5/9(Thr) :<a href="swim/0509.html" target="_parent">スイム練[forming]</a></li>
+<Li>5/10(Fri) :<a href="run/0510.html" target="_parent">ラン練[jog]</a></li>
+<li>5/11(Sat) :<a href="bike/0511.html" target="_parent">バイク練[強清水]</a></li>
+<hr>
+
+
+<hr>
+<Li>5/13(Mon) :<a href="run/0513.html" target="_parent">ラン練[ペース走(短大)]</a></li>
+<Li>5/14(Tue) :<a href="swim/0514.html" target="_parent">スイム練[forming]</a></li>
+<Li>5/16(Thr) :<a href="swim/0516.html" target="_parent">スイム練[hypo]</a></li>
+<Li>5/17(Fri) :<a href="run/0517.html" target="_parent">ラン練[インターバル走]</a></li>
+<li>5/18(Sat) :<a href="bike/0518.html" target="_parent">バイク練[東山エンデューロ]</a></li>
+<hr>
+
+<hr>
+<Li>5/20(Mon) :<a href="run/0520.html" target="_parent">ラン練[build-up走(短大)]</a></li>
+<Li>5/21(Tue) :<a href="swim/0521.html" target="_parent">スイム練[interval]</a></li>
+<Li>5/23(Thr) :<a href="swim/0523.html" target="_parent">スイム練[蟻地獄]</a></li>
+<Li>5/24(Fri) :<a href="run/0524.html" target="_parent">ラン練[build-up走(短大)]</a></li>
+<li>5/25(Sat) :OBOG旅行</li>
+<li>5/26(Sun) :OBOG旅行</li>
+<hr>
+
+<hr>
+<Li>5/27(Mon) :<a href="run/0527.html" target="_parent">ラン練[build-up走(短大)]</a></li>
+<Li>5/28(Tue) :<a href="swim/0528.html" target="_parent">スイム練[interval]</a></li>
+<Li>5/30(Thr) :<a href="swim/0529.html" target="_parent">スイム練[forming]</a></li>
+<Li>5/31(Fri) :4月期ミーティング</li>
+<hr>
+
+<hr>
+
+</ul>
+</div>
+<div id="footer">
+Copyright &copy; 2019 University of Aizu Triathlon Team, All Rights Reserved.
+</div>
+</body>
+</html>

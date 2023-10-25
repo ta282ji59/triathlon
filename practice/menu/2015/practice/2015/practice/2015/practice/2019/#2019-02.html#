@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアスロン部</title>
+
+<link href="../../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="body">
+
+<h1>会津大学トライアスロン部</h1>
+<iframe src="../../head.html" class="head" frameborder="0" scrolling="no">
+お使いのブラウザは対応しておりません。
+</iframe>
+
+<div id="side_menu">
+<h2><a href="../practice.html" target="_parent">■練習TOP</a></h2>
+</div>
+
+<div id="contents">
+<h3>2019  部活内容</h3>
+
+<ul>
+<h4>2019年2月</h4>
+<hr>
+<style>/*　スタイルの中はコメントアウト！
+*/</style>
+
+
+
+
+<hr>
+<Li>2/14(Thr) :<a href="swim/0214.html" target="_parent">スイム練[hypo]</a></li>
+<Li>2/15(Fri) :<a href="run/0215.html" target="_parent">ラン練[jog]</a></li>
+<li>2/16(Sat) ：<a href="bike/0216.html" target="_parent">バイク練[ローラー台]</a></li>
+<hr>
+
+<hr>
+<Li>2/18(Mon) :2月ミーティング</li>
+<Li>2/19(Tue) :<a href="swim/0219.html" target="_parent">午前スイム練[interval]</a></li>
+<Li>1/17(Thr) :<a href="swim/0117.html" target="_parent">スイム練[forming]</a></li>
+<Li>1/18(Fri) :新年会</li>
+<li>1/19(Sat) :センター試験</li>
+<hr>
+
+<hr>
+<Li>1/21(Mon) :<a href="run/0121.html" target="_parent">ラン練[jog＆ドリル]</a></li>
+<Li>1/22(Tue) :<a href="swim/0122.html" target="_parent">スイム練[easy-hard]</a></li>
+<Li>1/24(Thr) :<a href="swim/0124.html" target="_parent">スイム練[forming]</a></li>
+<Li>1/25(Fri) :<a href="run/0125.html" target="_parent">ラン練[jog]</a></li>
+<li>1/26(Sat) ：<a href="bike/0126.html" target="_parent">バイク練[ローラー台]</a></li>
+<hr>
+
+<hr>
+<Li>1/28(Mon) :ミーティング</li>
+<Li>1/29(Tue) :<a href="swim/0129.html" target="_parent">スイム練[forming]</a></li>
+<Li>1/31(Thr) :<a href="swim/0131.html" target="_parent">スイム練[中距離泳]</a></li>
+<hr>
+
+
+
+
+
+<hr>
+
+</ul>
+</div>
+<div id="footer">
+Copyright &copy; 2019 University of Aizu Triathlon Team, All Rights Reserved.
+</div>
+</body>
+</html>

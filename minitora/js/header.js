@@ -3,7 +3,7 @@ const head = document.getElementById("head");
 const $h1 = document.createElement("h1");
 const $a_h1 = document.createElement("a");
 $a_h1.textContent = "会津大学トライアスロン部";
-$a_h1.href = "index.html";
+$a_h1.href = "../index.html";
 $h1.appendChild($a_h1);
 head.appendChild($h1);
 
@@ -13,7 +13,7 @@ $div_display_PC_header.classList.add("display_PC_header");
 const li_List = [
     { href: "../index.html", text: "ホーム" },
     { href: "../about.html", text: "活動" },
-    { href: "../minitora/index.html", text: "ミニトライアスロン2023" },
+    { href: "../minitora/minitora2023.html", text: "ミニトライアスロン2023" },
     { href: "../member.html", text: "部員" },
     { href: "../event.html", text: "年間行事" },
     { href: "../blog.html", text: "活動報告" },

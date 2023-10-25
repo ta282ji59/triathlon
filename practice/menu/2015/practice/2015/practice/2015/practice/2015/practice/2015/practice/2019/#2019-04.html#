@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアスロン部</title>
+
+<link href="../../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="body">
+
+<h1>会津大学トライアスロン部</h1>
+<iframe src="../../head.html" class="head" frameborder="0" scrolling="no">
+お使いのブラウザは対応しておりません。
+</iframe>
+
+<div id="side_menu">
+<h2><a href="../practice.html" target="_parent">■練習TOP</a></h2>
+</div>
+
+<div id="contents">
+<h3>2019  部活内容</h3>
+
+<ul>
+<h4>2019年4月</h4>
+<hr>
+<style>/*　スタイルの中はコメントアウト！
+*/</style>
+
+
+
+
+<hr>
+<Li>3/1(Fri) :<a href="run/0301.html" target="_parent">ラン練[build-up走]</a></li>
+<li>3/2(Sat) ：<a href="bike/0302.html" target="_parent">バイク練[サイクリングロード]</a></li>
+<hr>
+
+<hr>
+<Li>4/1(Mon) :<a href="run/0304.html" target="_parent">ラン練[長距離大会]（種目: 800 1500 3000 5000）</a></li>
+<Li>4/2(Tue) :４大入学式</li>
+<Li>4/3(Wed) :短大入学式</li>
+<Li>4/4(Thr) :<a href="swim/0307.html" target="_parent">スイム練[蟻地獄]</a></li>
+<Li>4/5(Fri) :<a href="run/0308.html" target="_parent">ラン練[jog]</a></li>
+<li>4/6(Sat) :<a href="bike/0302.html" target="_parent">バイク練[]</a></li>
+<hr>
+
+
+<hr>
+<Li>4/8(Mon) :<a href="run/0311.html" target="_parent">ラン練[ミニ駅伝]</a></li>
+<Li>4/9(Tue) :<a href="swim/0312.html" target="_parent">スイム練[forming/水球]</a></li>
+<Li>4/11(Thr) :<a href="swim/0314.html" target="_parent">スイム練[ラクテート]</a></li>
+<Li>4/12(Fri) :<a href="run/0315.html" target="_parent">ラン練[build-up走]</a></li>
+<li>4/13(Sat) :<a href="bike/0316.html" target="_parent">バイク練[サイクリングロード]</a></li>
+<hr>
+
+<hr>
+<Li>4/15(Mon) :<a href="run/0318.html" target="_parent">ラン練[みんなで42.195km走ろう！！ 目指せ世界記録！！]</a></li>
+<Li>4/16(Tue) :
+<Li>4/18(Thr) :
+<Li>4/19(Fri) :花見</li>
+<li>4/20(Sat) :ミニトラ</li>
+<hr>
+
+<hr>
+<Li>4/22(Mon) :<a href="run/0325.html" target="_parent">ラン練[TT (5000m or 10000m)]</a></li>
+<Li>4/23(Tue) :<a href="swim/0326.html" target="_parent">スイム練[磐梯山]</a></li>
+<Li>4/25(Thr) :<a href="run/0328.html" target="_parent">ラン、バイク練[デュアスロン（サイクリングロード）]</a></li>
+<Li>4/26(Fri) :<a href="run/0329.html" target="_parent">ラン練[インターバル(400m)]</a></li>
+<li>4/27(Sat) :<a href="bike/0330.html" target="_parent">バイク練[喜多方]</a></li>
+<hr>
+
+<hr>
+
+</ul>
+</div>
+<div id="footer">
+Copyright &copy; 2019 University of Aizu Triathlon Team, All Rights Reserved.
+</div>
+</body>
+</html>

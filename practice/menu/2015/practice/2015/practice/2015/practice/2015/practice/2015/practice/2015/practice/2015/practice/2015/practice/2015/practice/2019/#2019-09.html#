@@ -1,0 +1,82 @@
+
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアスロン部</title>
+
+<link href="../../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="body">
+
+<h1>会津大学トライアスロン部</h1>
+<iframe src="../../head.html" class="head" frameborder="0" scrolling="no">
+お使いのブラウザは対応しておりません。
+</iframe>
+
+<div id="side_menu">
+<h2><a href="../practice.html" target="_parent">■練習TOP</a></h2>
+</div>
+
+<div id="contents">
+<h3>2019  部活内容</h3>
+
+<ul>
+<h4>2019年9月</h4>
+<hr>
+<style>/*　スタイルの中はコメントアウト！
+  */</style>
+
+
+<hr>
+<Li>9/2(Mon) :<a href="run/0902.html" target="_parent">バイク練[強清水]/ラン練[ペース走]</a></li>
+<Li>9/3(Tue) :<a href="swim/0903.html" target="_parent">スイム練[Descending]</a></li>
+<Li>9/5(Thr) :<a href="swim/0905.html" target="_parent">スイム練[hypo]</a></li>
+<Li>9/6(Fri) :<a href="run/0906.html" target="_parent">ラン練[]</a></li>
+<Li>9/7(Sat) :<a href="bike/0907.html" target="_parent">バイク練[]</a></li>
+<Li>9/8(Sun) :トライアスロン</li>
+<hr>
+
+<hr>
+<Li>9/9(Mon) :<a href="run/0909.html" target="_parent">バイク練[]/ラン練[jog]</a></li>
+<Li>9/10(Tue) :<a href="swim/0910.html" target="_parent">スイム練[Easy-Hard]</a></li>
+<Li>9/12(Thr) :<a href="swim/0912.html" target="_parent">スイム練[interval]</a></li>
+<Li>9/13(Fri) :<a href="run/0913.html" target="_parent">ラン練[lsd]</a></li>
+<Li>9/14(Sat) :長井トライアスロン</li>
+<Li>9/15(Sun) :長井トライアスロン</li>
+<hr>
+
+<hr>
+<Li>9/16(Mon) :<a href="run/0916.html" target="_parent">バイク練[]/ラン練[jog]</a></li>
+<Li>9/17(Tue) :<a href="swim/0917.html" target="_parent">スイム練[hypo]</a></li>
+<Li>9/19(Thr) :<a href="swim/0919.html" target="_parent">スイム練[ラクテート]</a></li>
+<Li>9/20(Fri) :<a href="run/0920.html" target="_parent">バイク練[]/ラン練[jog]</a></li>
+<li>9/21(Sat) :
+<hr>
+
+<hr>
+<Li>9/23(Mon) :<a href="run/0722.html" target="_parent">ラン練[build-up走]</a></li>
+<Li>9/24(Tue) :<a href="swim/0723.html" target="_parent">スイム練[中距離泳]</a></li>
+<Li>9/25(Wed) :4大説明会</li>
+<Li>9/26(Thr) :<a href="swim/0725.html" target="_parent">スイム練[Descending]</a></li>
+<Li>9/27(Fri) :<a href="run/0726.html" target="_parent">７月期ミーティング＆ラン練[インターバル走]</a></li>
+<Li>9/28(Sat) :<a href="bike/0727.html" target="_parent">バイク練[うつくしま下見]</a></li>
+<hr>
+
+<hr>
+<Li>9/29(Mon) :<a href="run/0729.html" target="_parent">ラン練[build-up走]</a></li>
+<Li>9/30(Tue) :<a href="swim/0730.html" target="_parent">スイム練[interval]</a></li>
+<hr>
+
+<hr>
+
+</ul>
+</div>
+<div id="footer">
+Copyright &copy; 2019 University of Aizu Triathlon Team, All Rights Reserved.
+</div>
+</body>
+</html>

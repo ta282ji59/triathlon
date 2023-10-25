@@ -1,0 +1,80 @@
+
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアスロン部</title>
+
+<link href="../../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="body">
+
+<h1>会津大学トライアスロン部</h1>
+<iframe src="../../head.html" class="head" frameborder="0" scrolling="no">
+お使いのブラウザは対応しておりません。
+</iframe>
+
+<div id="side_menu">
+<h2><a href="../practice.html" target="_parent">■練習TOP</a></h2>
+</div>
+
+<div id="contents">
+<h3>2019  部活内容</h3>
+
+<ul>
+<h4>2019年11月</h4>
+<hr>
+<style>/*　スタイルの中はコメントアウト！
+  */</style>
+
+
+<hr>
+<Li>11/1(Fri) :<a href="run/1101.html" target="_parent">ラン練[jog]</a></li>
+<Li>11/2(Sat) :<a href="bike/1102.html" target="_parent">バイク練[大内宿]</a></li>
+<hr>
+
+<hr>
+<Li>11/4(Mon) :rest</li>
+<Li>11/5(Tue) :<a href="swim/1105.html" target="_parent">スイム練[Easy-Hard]</a></li>
+<Li>11/7(Thr) :<a href="swim/1107.html" target="_parent">スイム練[interval]</a></li>
+<Li>11/8(Fri) :<a href="run/1108.html" target="_parent">ラン練[400mインターバル]</a></li>
+<Li>11/9(Sat) :<a href="bike/1109.html" target="_parent">バイク練[ゴールドライン]</a></li>
+<hr>
+
+<hr>
+<Li>11/11(Mon) :<a href="run/1111.html" target="_parent">ラン練[ペース走]</a></li>
+<Li>11/12(Tue) :<a href="swim/1112.html" target="_parent">スイム練[バタフライforming]</a></li>
+<Li>11/14(Thr) :<a href="swim/1114.html" target="_parent">スイム練[バタフライforming]</a></li>
+<Li>11/15(Fri) :<a href="run/1115.html" target="_parent">ラン練[build-up走]</a></li>
+<li>11/16(Sat) :25周年旅行</li>
+<li>11/17(Sun) :25周年旅行</li>
+<hr>
+
+<hr>
+<Li>11/18(Mon) :<a href="run/1118.html" target="_parent">ラン練[build-up走]</a></li>
+<Li>11/19(Tue) :<a href="swim/1119.html" target="_parent">スイム練[forming]</a></li>
+<Li>11/21(Tue) :<a href="swim/1121.html" target="_parent">スイム練[descending]</a></li>
+<Li>11/22(Fri) :<a href="run/1122.html" target="_parent">ラン練[jog]</a></li>
+<Li>11/23(Sat) :大田原マラソン</li>
+<hr>
+
+<hr>
+<Li>11/25(Mon) :<a href="run/1125.html" target="_parent">ラン練[]</a></li>
+<Li>11/26(Tue) :<a href="swim/112.html" target="_parent">スイム練[]</a></li>
+<Li>11/28(Tue) :<a href="swim/1031.html" target="_parent">スイム練[]</a></li>
+<Li>11/29(Fri) :<a href="run/1025.html" target="_parent">ラン練[]</a></li>
+<Li>11/30(Sat) :<a href="bike/1026.html" target="_parent">バイク練[]</a></li>
+<hr>
+
+<hr>
+
+</ul>
+</div>
+<div id="footer">
+Copyright &copy; 2019 University of Aizu Triathlon Team, All Rights Reserved.
+</div>
+</body>
+</html>

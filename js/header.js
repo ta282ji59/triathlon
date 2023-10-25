@@ -13,7 +13,7 @@ $div_display_PC_header.classList.add("display_PC_header");
 const li_List = [
     { href: "index.html", text: "ホーム" },
     { href: "about.html", text: "活動" },
-    { href: "minitora/index.html", text: "ミニトライアスロン2023" },
+    { href: "minitora/minitora2023.html", text: "ミニトライアスロン2023" },
     { href: "member.html", text: "部員" },
     { href: "event.html", text: "年間行事" },
     { href: "blog.html", text: "活動報告" },

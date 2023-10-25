@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><br>
+
+<head>
+<title>会津大学トライアアスロン部</title>
+
+<link href="../default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#E6E6FA">
+
+<div id="side_menu" class="frame">
+
+  <form method="post" action="init.cgi">
+<h2><a href="2022/2022.html" target="content">■ 2022</a></h2>
+<h2><a href="2021/2021.html" target="content">■ 2021</a></h2>
+<h2><a href="2020/2020.html" target="content">■ 2020</a></h2>
+<h2><a href="2019/2019.html" target="content">■ 2019</a></h2>
+<h2><a href="2018/2018.html" target="content">■ 2018</a></h2>
+<h2><a href="2017/2017.html" target="content">■ 2017</a></h2>
+<h2><a href="2016/2016.html" target="content">■ 2016</a></h2>
+<h2><a href="2015/2015.html" target="content">■ 2015</a></h2>
+<h2><a href="2014/2014.html" target="content">■ 2014</a></h2>
+<h2><a href="2013new/2013.html" target="content">■ 2013</a></h2>
+<h2><a href="2011/2011.html" target="content">■ 2011</a></h2>
+<h2><a href="2007/2007.html" target="content">■ 2007</a></h2>
+</div>
+
+
+</body>
+</html>
