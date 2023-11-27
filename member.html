@@ -36,17 +36,17 @@
                     <div id="detail_2">
                         <img class="profile" onclick="clickimage('2')">
                         <p></p>
-                        <div id="achiveDisplay"></div>
+                        <div id="achiveDisplay_2"></div>
                     </div>
                     <div id="detail_3">
                         <img class="profile" onclick="clickimage('3')">
                         <p></p>
-                        <div id="achiveDisplay"></div>
+                        <div id="achiveDisplay_3"></div>
                     </div>
                     <div id="detail_4">
                         <img class="profile" onclick="clickimage('4')">
                         <p></p>
-                        <div id="achiveDisplay"></div>
+                        <div id="achiveDisplay_4"></div>
                     </div>
                 </div>
                 <div class="member">
@@ -201,7 +201,7 @@
                     </div>
                     <div id="detail_30">
                         <img class="profile" onclick="clickimage('30')">
-                        <p>遠藤 康介</p>
+                        <p></p>
                         <div id="achiveDisplay"></div>
                     </div>
                 </div>
@@ -361,9 +361,13 @@
                 var index = parseInt(tag) - 1;
                 var achiveDisplay = document.getElementById('achiveDisplay_' + tag);
 
-                // Function to create and show the modal
-                function showModal(goal1, goal2) {
-                    // Create the modal container
+                function showModal(goal1, goal2, imageSrc) {
+                    var existingModal = document.getElementById('myModal');
+                    if (existingModal) {
+                        existingModal.style.display = 'block';
+                        return;
+                    }
+
                     var modal = document.createElement('div');
                     modal.id = 'myModal';
                     modal.style.display = 'block';
@@ -374,9 +378,8 @@
                     modal.style.width = '100%';
                     modal.style.height = '100%';
                     modal.style.overflow = 'auto';
-                    modal.style.backgroundColor = 'rgba(0,0,0,0.4)'; // Black w/ opacity
+                    modal.style.backgroundColor = 'rgba(0,0,0,0.4)';
 
-                    // Create the modal content container
                     var modalContent = document.createElement('div');
                     modalContent.style.backgroundColor = '#fefefe';
                     modalContent.style.margin = '15% auto';
@@ -384,13 +387,15 @@
                     modalContent.style.border = '1px solid #888';
                     modalContent.style.width = '80%';
 
-                    // Add text to the modal content
-                    var goal1Text = document.createElement('p');
-                    goal1Text.textContent = "運動面の目標 → " + goal1;
-                    var goal2Text = document.createElement('p');
-                    goal2Text.textContent = "生活面等の目標 → " + goal2;
+                    var image = document.createElement('img');
+                    image.src = imageSrc;
+                    image.className = 'profile';
 
-                    // Add a close button to the modal
+                    var goal1Text = document.createElement('p');
+                    goal1Text.innerText = "運動面の目標:\n" + goal1;
+                    var goal2Text = document.createElement('p');
+                    goal2Text.innerText = "生活面等の目標: \n" + goal2;
+
                     var closeButton = document.createElement('span');
                     closeButton.textContent = '×';
                     closeButton.style.color = '#aaa';
@@ -401,8 +406,9 @@
                         modal.style.display = 'none';
                     };
 
-                    // Append the text and close button to the modal content
+                    // Append the image, text, and close button to the modal content
                     modalContent.appendChild(closeButton);
+                    modalContent.appendChild(image); // Append the image here
                     modalContent.appendChild(goal1Text);
                     modalContent.appendChild(goal2Text);
 
@@ -421,7 +427,7 @@
                     }
                 } else {
                     // If the modal is not displayed, show it
-                    showModal(memberData[index].goal1, memberData[index].goal2);
+                    showModal(memberData[index].goal1, memberData[index].goal2, memberData[index].image);
                 }
             }
 
