@@ -9,6 +9,39 @@
     <title>部員一覧</title>
     <link href="css/common.css" rel="stylesheet">
     <link href="css/style-member.css" rel="stylesheet">
+    <style>
+        /* Apply the styles to the member-group and member div elements */
+        .member-group {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow wrapping on smaller screens */
+            margin-bottom: 20px;
+            /* Add some spacing between groups */
+        }
+
+        .member {
+            flex: 1;
+            text-align: center;
+            margin: 10px;
+            /* Add spacing between members */
+        }
+
+        .profile {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            /* Ensure the image covers the circle */
+        }
+
+        @media (max-width: 1221px) {
+            .profile {
+                width: 100%;
+                height: auto;
+                /* Let the image's height adjust proportionally */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -20,298 +53,359 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="js/hamburger.js"></script>
 
-        <main>
-            <h2>部員一覧</h2>
-            <h3>学部4年</h3>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>橋本 尚人</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>中島 瑞生</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <!-- <div class="display_PHONE_main"></div> -->
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>今井 佑</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>神野 良昌</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>藁谷 太智</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <h3>学部3年</h3>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>德田 龍輝</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>宮﨑 颯</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>勝又 四海</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>高野 流空</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>粟木 恭司</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>若月 雄也</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/辻達也.png" class="profile">
-                    <p>辻󠄀 達也</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>野坂 匠吾</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
-            <h3>学部2年</h3>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>内田 龍一</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>阿部 広空</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>大高 眞</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>新井 拓希</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
 
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>小林 和</p>
-                    <div id="profileDisplay"></div>
+
+        <main>
+            <div id="main_content">
+                <h2>部員一覧</h2>
+                <h3>学部4年</h3>
+                <div class="member">
+                    <div id="detail_1">
+                        <img class="profile" onclick="clickimage('1')">
+                        <p></p>
+                        <div id="profileDisplay()"></div>
+                    </div>
+                    <div id="detail_2">
+                        <img class="profile" onclick="clickimage('2')">
+                        <p></p>
+                        <div id="profileDisplay()"></div>
+                    </div>
+                    <div id="detail_3">
+                        <img class="profile" onclick="clickimage('3')">
+                        <p></p>
+                        <div id="profileDisplay()"></div>
+                    </div>
+                    <div id="detail_4">
+                        <img class="profile" onclick="clickimage('4')">
+                        <p></p>
+                        <div id="profileDisplay()"></div>
+                    </div>
                 </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>宇佐見 隼平</p>
-                    <div id="profileDisplay"></div>
+                <div class="member">
+                    <div id="detail_5">
+                        <img class="profile" onclick="clickimage('5')">
+                        <p></p>
+                        <div id="profileDisplay()"></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>鈴木 杏実花</p>
-                    <div id="profileDisplay"></div>
+                <h3>学部3年</h3>
+                <div class="member">
+                    <div id="detail_6">
+                        <img class="profile" onclick="clickimage('6')">
+                        <p></p>
+                        <div id="profileDisplay('6')"></div>
+                    </div>
+                    <div id="detail_7">
+                        <img class="profile" onclick="clickimage('7')">
+                        <p></p>
+                        <div id="profileDisplay('7')"></div>
+                    </div>
+                    <div id="detail_8">
+                        <img class="profile" onclick="clickimage('8')">
+                        <p></p>
+                        <div id="profileDisplay('8')"></div>
+                    </div>
+                    <div id="detail_9">
+                        <img class="profile" onclick="clickimage('9')">
+                        <p></p>
+                        <div id="profileDisplay('9')"></div>
+                    </div>
                 </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>玉田 紗楽</p>
-                    <div id="profileDisplay"></div>
+                <div class="member">
+                    <div id="detail_10">
+                        <img class="profile" onclick="clickimage('10')">
+                        <p></p>
+                        <div id="profileDisplay('10')"></div>
+                    </div>
+                    <div id="detail_11">
+                        <img class="profile" onclick="clickimage('11')">
+                        <p></p>
+                        <div id="profileDisplay('11')"></div>
+                    </div>
+                    <div id="detail_12">
+                        <img class="profile" onclick="clickimage('12')">
+                        <p></p>
+                        <div id="profileDisplay('12')"></div>
+                    </div>
+                    <div id="detail_13">
+                        <img class="profile" onclick="clickimage('13')">
+                        <p></p>
+                        <div id="profileDisplay('13')"></div>
+                    </div>
                 </div>
+                <h3>学部2年</h3>
+                <div class="member">
+                    <div id="detail_14">
+                        <img class="profile" onclick="clickimage('14')">
+                        <p></p>
+                        <div id="profileDisplay('14')"></div>
+                    </div>
+                    <div id="detail_15">
+                        <img class="profile" onclick="clickimage('15')">
+                        <p></p>
+                        <div id="profileDisplay('15')"></div>
+                    </div>
+                    <div id="detail_16">
+                        <img class="profile" onclick="clickimage('16')">
+                        <p></p>
+                        <div id="profileDisplay('16')"></div>
+                    </div>
+                    <div id="detail_17">
+                        <img class="profile" onclick="clickimage('17')">
+                        <p></p>
+                        <div id="profileDisplay('17')"></div>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div id="detail_18">
+                        <img class="profile" onclick="clickimage('18')">
+                        <p></p>
+                        <div id="profileDisplay('18')"></div>
+                    </div>
+                    <div id="detail_19">
+                        <img class="profile" onclick="clickimage('19')">
+                        <p></p>
+                        <div id="profileDisplay('19')"></div>
+                    </div>
+                    <div id="detail_20">
+                        <img class="profile" onclick="clickimage('20')">
+                        <p></p>
+                        <div id="profileDisplay('20')"></div>
+                    </div>
+                    <div id="detail_21">
+                        <img class="profile" onclick="clickimage('21')">
+                        <p></p>
+                        <div id="profileDisplay('21')"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div id="detail_22">
+                        <img class="profile" onclick="clickimage('22')">
+                        <p></p>
+                        <div id="profileDisplay('22')"></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h3>学部1年</h3>
+                <div class="member">
+                    <div id="detail_23">
+                        <img class="profile" onclick="clickimage('23')">
+                        <p></p>
+                        <div id="profileDisplay('23')"></div>
+                    </div>
+                    <div id="detail_24">
+                        <img class="profile" onclick="clickimage('24')">
+                        <p></p>
+                        <div id="profileDisplay('24')"></div>
+                    </div>
+                    <div id="detail_25">
+                        <img class="profile" onclick="clickimage('25')">
+                        <p></p>
+                        <div id="profileDisplay('25')"></div>
+                    </div>
+                    <div id="detail_26">
+                        <img class="profile" onclick="clickimage('26')">
+                        <p></p>
+                        <div id="profileDisplay('26')"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div id="detail_27">
+                        <img class="profile" onclick="clickimage('27')">
+                        <p></p>
+                        <div id="profileDisplay('27')"></div>
+                    </div>
+                    <div id="detail_28">
+                        <img class="profile" onclick="clickimage('28')">
+                        <p></p>
+                        <div id="profileDisplay('28')"></div>
+                    </div>
+                    <div id="detail_29">
+                        <img class="profile" onclick="clickimage('29')">
+                        <p></p>
+                        <div id="profileDisplay('29')"></div>
+                    </div>
+                    <div id="detail_30">
+                        <img class="profile" onclick="clickimage('30')">
+                        <p>遠藤 康介</p>
+                        <div id="profileDisplay('30')"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div id="detail_31">
+                        <img class="profile" onclick="clickimage('31')">
+                        <p></p>
+                        <div id="profileDisplay('31')"></div>
+                    </div>
+                    <div id="detail_32">
+                        <img class="profile" onclick="clickimage('32')">
+                        <p></p>
+                        <div id="profileDisplay('32')"></div>
+                    </div>
+                    <div id="detail_33">
+                        <img class="profile" onclick="clickimage('33')">
+                        <p></p>
+                        <div id="profileDisplay('33')"></div>
+                    </div>
+                    <div id="detail_34">
+                        <img class="profile" onclick="clickimage('34')">
+                        <p></p>
+                        <div id="profileDisplay('34')"></div>
+                    </div>
+                </div>
+                <h3>大学院生</h3>
+                <div class="member">
+                    <div id="detail_35">
+                        <img class="profile" onclick="clickimage('35')">
+                        <p></p>
+                        <div id="profileDisplay('35')"></div>
+                    </div>
+                    <div id="detail_36">
+                        <img class="profile" onclick="clickimage('36')">
+                        <p></p>
+                        <div id="profileDisplay('36')"></div>
+                    </div>
+                    <div id="detail_37">
+                        <img class="profile" onclick="clickimage('37')">
+                        <p></p>
+                        <div id="profileDisplay('37')"></div>
+                    </div>
+                    <div id="detail_38">
+                        <img class="profile" onclick="clickimage('38')">
+                        <p></p>
+                        <div id="profileDisplay('38')"></div>
+                    </div>
+                </div>
+                <div class="member">
+                    <div id="detail_39">
+                        <img class="profile" onclick="clickimage('39')">
+                        <p></p>
+                        <div id="profileDisplay('39')"></div>
+                    </div>
+                    <div id="detail_40">
+                        <img class="profile" onclick="clickimage('40')">
+                        <p></p>
+                        <div id="profileDisplay('40')"></div>
+                    </div>
+                    <div id="detail_41">
+                        <img class="profile" onclick="clickimage('41')">
+                        <p></p>
+                        <div id="profileDisplay('41')"></div>
+                    </div>
+                    <div></div>
+                </div>
+                <h3>短期大学2年</h3>
+                <div class="member">
+                    <div id="detail_42">
+                        <img class="profile" onclick="clickimage()">
+                        <p></p>
+                        <div id="profileDisplay('42')"></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h3>短期大学1年</h3>
+                <div class="member">
+                    <div id="detail_43">
+                        <img class="profile" onclick="clickimage()">
+                        <p></p>
+                        <div id="profileDisplay('43')"></div>
+                    </div>
+                    <div id="detail_44">
+                        <img class="profile" onclick="clickimage()">
+                        <p></p>
+                        <div id="profileDisplay('44')"></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <br><br><br>
             </div>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>平田 ゆり</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <h3>学部1年</h3>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>塚本 悠馬</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>笠間 堅杜</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>辻本 渉之介</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>荒木 悠仁</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>渡辺 快斗</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>伊瀨 智三郎</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>菅野 貴也</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>石塚 大理</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>遠藤 康介</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>谷口 虎太郎</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>石田 柊生</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>渡邊 光琉</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>皆川 綺理</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>青木 伶奈</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div></div>
-                <div></div>
-            </div>
-            <h3>大学院生</h3>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>内田 悠太</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>柴倉 大靖</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>白石 大成</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>服部 晃大</p>
-                    <div id="profileDisplay"></div>
-                </div>
-            </div>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>飯島 裕樹</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>新冨 優太</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>吾妻 敬也</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div></div>
-            </div>
-            <h3>短期大学2年</h3>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>設楽 夕凪</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <h3>短期大学1年</h3>
-            <div class="member">
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>佐藤 実紗</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div>
-                    <img src="image/profile/profile.png" class="profile">
-                    <p>後藤 未桜</p>
-                    <div id="profileDisplay"></div>
-                </div>
-                <div></div>
-                <div></div>
-            </div>
-            <br><br><br>
         </main>
         <footer>
             <div id="foot">
                 <script src="js/footer.js"></script>
             </div>
         </footer>
+        <script>
+            const memberData = [
+                { id: 1, name: "橋本 尚人", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 2, name: "中島 瑞生", image: "image/profile/profile.png", goal1: "フルマラソン完走する", goal2: "卒業する" },
+                { id: 3, name: "今井 佑", image: "image/profile/profile.png", goal1: "楽しむ。", goal2: "毎日を良い日にする。" },
+                { id: 4, name: "神野 良昌", image: "image/profile/profile.png", goal1: "フルマラソン完走", goal2: "大学を卒業" },
+                { id: 5, name: "藁谷 太智", image: "image/profile/profile.png", goal1: "", goal2: "" },
+
+                { id: 6, name: "德田 龍輝", image: "https://thumb.ac-illust.com/c7/c7f4245975bab1af08039d6209f2b21e_t.jpeg", goal1: "ジョグをする", goal2: "勉強をする" },
+                { id: 7, name: "宮﨑 颯", image: "https://drive.google.com/uc?id=1K7LGr3a2wZpAtlP7deJfTSMgFn1V34Yz&usp=sharing", goal1: "入賞", goal2: "単位" },
+                { id: 8, name: "勝又 四海", image: "https://drive.google.com/uc?id=1ZpwrOcZj78caV747cp5CnsBJbnfRS6-I&usp=sharing", goal1: "何かしら大会にでる", goal2: "勉強" },
+                { id: 9, name: "高野 流空", image: "https://pbs.twimg.com/profile_images/955778394641203200/MP505ToY_400x400.jpg", goal1: "", goal2: "" },
+                { id: 10, name: "粟木 恭司", image: "https://freeillust-classic.com/wp-content/uploads/0215000027.png", goal1: "", goal2: "" },
+                { id: 11, name: "若月 雄也", image: "https://img.freepik.com/premium-vector/running-illustration_542607-4819.jpg", goal1: "雨でも雪でも毎日練習する", goal2: "いろんなおかずでご飯を食べる" },
+                { id: 12, name: "辻 達也", image: "image/profile/辻達也.png", goal1: "運動するモチベを上げる", goal2: "優秀なエンジニアさんになる" },
+                { id: 13, name: "野坂 匠吾", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/270px-The_Blue_Marble_%28remastered%29.jpg", goal1: "", goal2: "" },
+
+                { id: 14, name: "内田 龍一", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 15, name: "阿部 広空", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 16, name: "大高 眞", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 17, name: "新井 拓希", image: "https://drive.google.com/uc?id=1Vx9tVOAFfHJMXiF8ky3cfY9npBESv4n1&usp=sharing", goal1: "佐渡A年代別1位", goal2: "寝坊しない" },
+                { id: 18, name: "小林 和", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 19, name: "宇佐見 隼平", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 20, name: "鈴木 杏実花", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 21, name: "玉田 紗楽", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 22, name: "平田 ゆり", image: "image/profile/profile.png", goal1: "", goal2: "" },
+
+                { id: 23, name: "塚本 悠馬", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 24, name: "笠間 堅杜", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 25, name: "辻本 渉之介", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 26, name: "荒木 悠仁", image: "https://drive.google.com/uc?id=1Ek5zKbemt10BgRPP3CEFx3F9WPB25-9z&usp=sharing", goal1: "健康維持", goal2: "コミュ力欲しい" },
+                { id: 27, name: "伊瀨 智三郎", image: "image/profile/profile.png", goal1: "滝沢峠ヒルクライム15分台", goal2: "早起き" },
+                { id: 28, name: "菅野 貴也", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 29, name: "石塚 大理", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 30, name: "遠藤 康介", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 31, name: "谷口 虎太郎", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 32, name: "石田 柊生", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 33, name: "渡邊 光琉", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 34, name: "青木 伶奈", image: "image/profile/profile.png", goal1: "楽しく運動したい", goal2: "規則正しい生活" },
+
+                { id: 35, name: "内田 悠太", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 36, name: "柴倉 大靖", image: "https://drive.google.com/uc?id=15DUhSA_JQjTYZHtv-8vGpqhSMXEwOIzS&usp=sharing", goal1: "健康的な体づくりを目指し、ジョギングを欠かさない", goal2: "人生を豊かにする方法を考える" },
+                { id: 37, name: "白石 大成", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 38, name: "服部 晃大", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 39, name: "飯島 裕樹", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 40, name: "新冨 優太", image: "image/profile/profile.png", goal1: "スイム部内最速の称号の奪還", goal2: "卒業する" },
+                { id: 41, name: "吾妻 敬也", image: "image/profile/profile.png", goal1: "サブ3達成", goal2: "内定もらう" },
+
+                { id: 42, name: "設楽 夕凪", image: "image/profile/profile.png", goal1: "", goal2: "" },
+
+                { id: 43, name: "佐藤 実紗", image: "image/profile/profile.png", goal1: "", goal2: "" },
+                { id: 44, name: "後藤 未桜", image: "image/profile/profile.png", goal1: "ハーフマラソンを1時間45分で走る。", goal2: "イベントに参加する。" }
+
+            ];
+
+            function clickimage(tag) {
+                var index = parseInt(tag) - 1;
+                alert(memberData[index].goal1+ '\n' +memberData[index].goal2);
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                for (let i = 0; i < memberData.length; i++) {
+                    var detail = document.getElementById('detail_' + (i + 1))
+                    var img = detail.getElementsByTagName('img')
+                    var name = detail.querySelector('p')
+
+                    img[0].src = memberData[i].image;
+                    name.textContent = memberData[i].name;
+                }
+            });
+        </script>
 </body>
 
 </html>
