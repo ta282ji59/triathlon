@@ -305,7 +305,7 @@
 
         <script>
             const memberData = [
-                { id: '28', name: "橋本 尚人", image: "image/profile/profile.png", goal1: "null", goal2: "null" },
+                { id: '28', name: "橋本 尚人", image: "image/profile/profile.png", goal1: "", goal2: "" },
                 { id: '28', name: "中島 瑞生", image: "image/profile/profile.png", goal1: "フルマラソン完走する", goal2: "卒業する" },
                 { id: '28', name: "今井 佑", image: "image/profile/profile.png", goal1: "楽しむ。", goal2: "毎日を良い日にする。" },
                 { id: '28', name: "神野 良昌", image: "image/profile/profile.png", goal1: "フルマラソン完走", goal2: "大学を卒業" },
@@ -452,7 +452,7 @@
                         existingModal.style.display = 'none';
                     }
                 } else {
-                    showModal(memberData[index].goal1, memberData[index].goal2, memberData[index].image,memberData[index].name);
+                    showModal(memberData[index].goal1, memberData[index].goal2, memberData[index].image, memberData[index].name);
                 }
             }
 
@@ -460,6 +460,7 @@
 
 
             document.addEventListener("DOMContentLoaded", function () {
+                
                 for (let i = 0; i <= memberData.length; i++) {
                     var detail = document.getElementById('detail_' + (i + 1))
                     var img = detail.getElementsByTagName('img')
@@ -467,7 +468,6 @@
 
                     img[0].src = memberData[i].image;
                     name.textContent = memberData[i].name;
-
                 }
             });
         </script>

@@ -8,177 +8,293 @@
     <link rel="icon" href="image/image.png">
     <title>部員一覧</title>
     <link href="css/common.css" rel="stylesheet">
-    <link href="css/style-member.css" rel="stylesheet">
-    <style>
-        /* Apply the styles to the member-group and member div elements */
-        .member-group {
-            display: flex;
-            flex-wrap: wrap;
-            /* Allow wrapping on smaller screens */
-            margin-bottom: 20px;
-            /* Add some spacing between groups */
-        }
-
-        .member {
-            flex: 1;
-            text-align: center;
-            margin: 10px;
-            /* Add spacing between members */
-        }
-
-        .profile {
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            /* Ensure the image covers the circle */
-        }
-
-        @media (max-width: 1221px) {
-            .profile {
-                width: 100%;
-                height: auto;
-                /* Let the image's height adjust proportionally */
-            }
-        }
-    </style>
 </head>
 
 <body>
-
     <header>
         <div id="head">
             <script src="js/header.js"></script>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="js/hamburger.js"></script>
+        <main>
+            <div id="main_content">
+                <h2>部員一覧</h2>
+                <strong><p style="color: red;">画像をクリックするとメンバーの目標が見れます。</p></strong>
+            </div>
+            <script>
+                const memberData = [
+                    { id: '28', name: "橋本 尚人", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '28', name: "中島 瑞生", image: "image/profile/profile.png", goal1: "フルマラソン完走する", goal2: "卒業する" },
+                    { id: '28', name: "今井 佑", image: "image/profile/profile.png", goal1: "楽しむ。", goal2: "毎日を良い日にする。" },
+                    { id: '28', name: "神野 良昌", image: "image/profile/profile.png", goal1: "フルマラソン完走", goal2: "大学を卒業" },
+                    { id: '28', name: "藁谷 太智", image: "image/profile/profile.png", goal1: "考え中", goal2: "考え中...!" },
+
+                    { id: '29', name: "德田 龍輝", image: "https://thumb.ac-illust.com/c7/c7f4245975bab1af08039d6209f2b21e_t.jpeg", goal1: "ジョグをする", goal2: "勉強をする" },
+                    { id: '29', name: "宮﨑 颯", image: "https://drive.google.com/uc?id=1K7LGr3a2wZpAtlP7deJfTSMgFn1V34Yz&usp=sharing", goal1: "入賞", goal2: "単位" },
+                    { id: '29', name: "勝又 四海", image: "https://drive.google.com/uc?id=1ZpwrOcZj78caV747cp5CnsBJbnfRS6-I&usp=sharing", goal1: "何かしら大会にでる", goal2: "勉強" },
+                    { id: '29', name: "高野 流空", image: "https://pbs.twimg.com/profile_images/955778394641203200/MP505ToY_400x400.jpg", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '29', name: "粟木 恭司", image: "https://freeillust-classic.com/wp-content/uploads/0215000027.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '29', name: "若月 雄也", image: "https://img.freepik.com/premium-vector/running-illustration_542607-4819.jpg", goal1: "雨でも雪でも毎日練習する", goal2: "いろんなおかずでご飯を食べる" },
+                    { id: '29', name: "辻󠄀 達也", image: "image/profile/辻達也.png", goal1: "運動するモチベを上げる", goal2: "優秀なエンジニアさんになる" },
+                    { id: '29', name: "野坂 匠吾", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+
+                    { id: '30', name: "内田 龍一", image: "image/profile/profile.png", goal1: "フルマラソンサブ４", goal2: "朝ごはんを食べる" },
+                    { id: '30', name: "阿部 広空", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '30', name: "大高 眞", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '30', name: "新井 拓希", image: "https://drive.google.com/uc?id=1Vx9tVOAFfHJMXiF8ky3cfY9npBESv4n1&usp=sharing", goal1: "佐渡A年代別1位", goal2: "寝坊しない" },
+                    { id: '30', name: "小林 和", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '30', name: "宇佐見 隼平", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '30', name: "鈴木 杏実花", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '30', name: "玉田 紗楽", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '30', name: "平田 ゆり", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+
+                    { id: '31', name: "塚本 悠馬", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "笠間 堅杜", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "辻本 渉之介", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "荒木 悠仁", image: "https://drive.google.com/uc?id=1Ek5zKbemt10BgRPP3CEFx3F9WPB25-9z&usp=sharing", goal1: "健康維持", goal2: "コミュ力欲しい" },
+                    { id: '31', name: "伊瀨 智三郎", image: "image/profile/profile.png", goal1: "滝沢峠ヒルクライム15分台", goal2: "早起き" },
+                    { id: '31', name: "菅野 貴也", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "石塚 大理", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "遠藤 康介", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "谷口 虎太郎", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "石田 柊生", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "渡邊 光琉", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '31', name: "青木 伶奈", image: "image/profile/profile.png", goal1: "楽しく運動したい", goal2: "規則正しい生活" },
+
+                    { id: 'graduate', name: "内田 悠太", image: "image/profile/profile.png", goal1: "強清水TOP10入りする、サブスリーする", goal2: "技術領域を広げる" },
+                    { id: 'graduate', name: "柴倉 大靖", image: "https://drive.google.com/uc?id=15DUhSA_JQjTYZHtv-8vGpqhSMXEwOIzS&usp=sharing", goal1: "健康的な体づくりを目指し、ジョギングを欠かさない", goal2: "人生を豊かにする方法を考える" },
+                    { id: 'graduate', name: "白石 大成", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: 'graduate', name: "服部 晃大", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: 'graduate', name: "飯島 裕樹", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: 'graduate', name: "新冨 優太", image: "image/profile/profile.png", goal1: "スイム部内最速の称号の奪還", goal2: "卒業する" },
+                    { id: 'graduate', name: "吾妻 敬也", image: "image/profile/profile.png", goal1: "サブ3達成", goal2: "内定もらう" },
+
+                    { id: '1', name: "設楽 夕凪", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+
+                    { id: '2', name: "佐藤 実紗", image: "image/profile/profile.png", goal1: "考え中...!", goal2: "考え中...!" },
+                    { id: '2', name: "後藤 未桜", image: "image/profile/profile.png", goal1: "ハーフマラソンを1時間45分で走る。", goal2: "イベントに参加する。" }
+
+                ];
+                const grade = ['学部4年', '学部3年', '学部2年', '学部1年', '大学院生', '短期大学2年', '短期大学1年']
+
+
+                function clickimage(tag) {
+                    tag = parseInt(tag);
+                    alert(tag)
+                }
+
+
+                var main_content = document.getElementById('main_content');
+
+                var $h3 = document.createElement('h3');
+                $h3.textContent = grade[0]
+                main_content.appendChild($h3);
+
+                var currentId = memberData[0].id;
+                var count = 0;
+                var h3Count = 1;
+                var ciCount = 0;
+                var $div_member = document.createElement('div');
+                $div_member.classList.add('member');
+                main_content.appendChild($div_member);
+
+                memberData.forEach(member => {
+                    if (member.id !== currentId) {
+                        var $h3_ = document.createElement('h3');
+                        $h3_.textContent = grade[h3Count]
+                        main_content.appendChild($h3_);
+                        h3Count++;
+                    }
+                    if (member.id !== currentId || count === 4) {
+                        fillEmptySpaces($div_member, count);
+
+                        $div_member = document.createElement('div');
+                        $div_member.classList.add('member');
+                        main_content.appendChild($div_member);
+                        currentId = member.id;
+                        count = 0;
+                    }
 
 
 
-        <main id="main">
-            <h2>部員一覧</h2>
-            <h3>学部4年</h3>
-            <h3>学部3年</h3>
-            <h3>学部2年</h3>
-            <h3>学部1年</h3>
-            <h3>大学院</h3>
-            <h3>会津短大2年</h3>
-            <h3>会津短大1年</h3>
+                    var $div_detail = document.createElement('div');
+                    $div_detail.id = "detail_" + (ciCount + 1);
+
+                    var $img = document.createElement('img');
+                    $img.classList.add('profile');
+                    $img.src = member.image;
+
+                    var $p = document.createElement('p');
+                    $p.textContent = member.name;
+
+                    var $div_achive = document.createElement('div');
+                    $div_achive.id = "achiveDisplay_" + (ciCount + 1);
+
+                    $div_detail.appendChild($img);
+                    $div_detail.appendChild($p);
+                    $div_detail.appendChild($div_achive);
+                    $div_member.appendChild($div_detail);
+
+                    count++;
+                    ciCount++;
+                });
+
+                fillEmptySpaces($div_member, count);
+
+                function fillEmptySpaces(div, count) {
+                    while (count % 4 !== 0) {
+                        var $empty_div = document.createElement('div');
+                        div.appendChild($empty_div);
+                        count++;
+                    }
+                }
+            </script>
+
+            <script>
+                window.onload = function () {
+                    // 画像要素をすべて取得
+                    var images = document.querySelectorAll('img');
+                    var clickIndex = 1;
+
+                    // 各画像に対してクリックイベントを設定
+                    images.forEach(function (img) {
+                        img.setAttribute('onclick', 'clickimage(' + clickIndex + ')');
+                        clickIndex++;
+                    });
+                };
+
+                function clickimage(tag) {
+                var index = parseInt(tag-1);
+                var achiveDisplay = document.getElementById('achiveDisplay_' + tag);
+
+                function showModal(goal1, goal2, imageSrc, name) {
+                    var existingModal = document.getElementById('myModal');
+                    if (existingModal) {
+                        var image = existingModal.querySelector('img');
+                        var memName = existingModal.querySelectorAll('p')[0];
+                        var goal1Text = existingModal.querySelectorAll('p')[1];
+                        var goal2Text = existingModal.querySelectorAll('p')[2];
+
+                        image.src = imageSrc;
+                        memName.innerText = "名前: " + name;
+                        goal1Text.innerText = "運動面の目標:\n" + goal1;
+                        goal2Text.innerText = "生活面等の目標: \n" + goal2;
+
+                        existingModal.style.display = 'block';
+                        return;
+                    }
+
+
+                    var hr1 = document.createElement('hr');
+                    var hr2 = document.createElement('hr');
+                    var hr3 = document.createElement('hr');
+
+                    var modal = document.createElement('div');
+                    modal.id = 'myModal';
+                    modal.style.display = 'block';
+                    modal.style.position = 'fixed';
+                    modal.style.zIndex = '1';
+                    modal.style.left = '0';
+                    modal.style.top = '0';
+                    modal.style.width = '100%';
+                    modal.style.height = '150vh';
+                    modal.style.overflow = 'auto';
+                    modal.style.backgroundColor = 'rgba(0,0,0,0.4)';
+
+                    var modalContent = document.createElement('div');
+                    modalContent.style.backgroundColor = '#fefefe';
+                    modalContent.style.margin = '15% auto';
+                    modalContent.style.padding = '20px';
+                    modalContent.style.border = '1px solid #888';
+                    modalContent.style.width = '80%';
+                    modalContent.style.textAlign = 'center'
+
+                    var image = document.createElement('img');
+                    image.src = imageSrc;
+                    image.style.borderRadius = '50%'
+                    image.style.width = '100px'
+                    image.style.height = '100px'
+
+                    var memName = document.createElement('p');
+                    memName.innerText = "名前: " + name;
+                    memName.style.textAlign = 'left';
+
+
+                    var goal1Text = document.createElement('p');
+                    goal1Text.innerText = "運動面の目標:\n" + goal1;
+                    goal1Text.style.textAlign = 'left'
+
+
+                    var goal2Text = document.createElement('p');
+                    goal2Text.innerText = "生活面等の目標: \n" + goal2;
+                    goal2Text.style.textAlign = 'left'
+
+                    var closeButton = document.createElement('span');
+                    closeButton.textContent = '×';
+                    closeButton.style.color = '#aaa';
+                    closeButton.style.float = 'right';
+                    closeButton.style.fontSize = '28px';
+                    closeButton.style.fontWeight = 'bold';
+                    closeButton.onclick = function () {
+                        modal.style.display = 'none';
+                    };
+
+                    modalContent.appendChild(closeButton);
+                    modalContent.appendChild(image);
+                    modalContent.appendChild(hr1);
+                    modalContent.appendChild(memName);
+                    modalContent.appendChild(hr2);
+                    modalContent.appendChild(goal1Text);
+                    modalContent.appendChild(hr3);
+                    modalContent.appendChild(goal2Text);
+                    modal.appendChild(modalContent);
+                    document.body.appendChild(modal);
+                }
+
+                if (achiveDisplay.hasChildNodes()) {
+                    var existingModal = document.getElementById('myModal');
+                    if (existingModal) {
+                        existingModal.style.display = 'none';
+                    }
+                } else {
+                    showModal(memberData[index].goal1, memberData[index].goal2, memberData[index].image, memberData[index].name);
+                }
+            }
+            </script>
+
         </main>
 
-        <script>
-            const memberData = {
-                "学部4年": [
-                    { name: "橋本 尚人", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "中島 瑞生", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "今井 佑", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "神野 良昌", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "藁谷 太智", image: "image/profile/profile.png", goal1: "", goal2: "" }
-                ],
-                "学部3年": [
-                    { name: "德田 龍輝", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "宮﨑 颯", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "勝又 四海", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "高野 流空", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "粟木 恭司", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "若月 雄也", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "辻 達也", image: "image/profile/辻達也.png", goal1: "", goal2: "" },
-                    { name: "野坂 匠吾", image: "image/profile/profile.png", goal1: "", goal2: "" }
-                ],
-                "学部2年": [
-                    { name: "内田 龍一", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "阿部 広空", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "大高 眞", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "新井 拓希", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "小林 和", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "宇佐見 隼平", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "鈴木 杏実花", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "玉田 紗楽", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "平田 ゆり", image: "image/profile/profile.png", goal1: "", goal2: "" }
-                ],
-                "学部1年": [
-                    { name: "塚本 悠馬", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "笠間 堅杜", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "辻本 渉之介", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "荒木 悠仁", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "伊瀨 智三郎", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "菅野 貴也", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "石塚 大理", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "遠藤 康介", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "谷口 虎太郎", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "石田 柊生", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "渡邊 光琉", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "青木 伶奈", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                ],
-                "大学院生": [
-                    { name: "内田 悠太", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "柴倉 大靖", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "白石 大成", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "服部 晃大", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "飯島 裕樹", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "新冨 優太", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "吾妻 敬也", image: "image/profile/profile.png", goal1: "", goal2: "" }
-                ],
-                "短期大学2年": [
-                    { name: "設楽 夕凪", image: "image/profile/profile.png", goal1: "", goal2: "" }
-                ],
-                "短期大学1年": [
-                    { name: "佐藤 実紗", image: "image/profile/profile.png", goal1: "", goal2: "" },
-                    { name: "後藤 未桜", image: "image/profile/profile.png", goal1: "", goal2: "" }
-                ]
-            };
-            const main = document.getElementById('main');
-            const remainderMap = {};
+        <style>
+            @charset "UTF-8";
 
-            for (const grade in memberData) {
-                if (memberData[grade].length % 4 !== 0) {
-                    remainderMap[grade] = 4 - (memberData[grade].length % 4);
-                }
+            .member {
+                display: flex;
             }
 
-            for (const grade in memberData) {
-                for (let j = 0; j < memberData[grade].length; j++) {
-                    const $div = document.createElement('div');
-                    const $img = document.createElement('img');
-                    $img.src = memberData[grade][j].image;
-                    $img.classList.add('profile');
-                    const $p = document.createElement('p');
-                    $p.textContent = memberData[grade][j].name;
-                    const $div_profileDisplay = document.createElement('div');
-                    $div_profileDisplay.id = "profileDisplay";
-
-                    $div.appendChild($img);
-                    $div.appendChild($p);
-                    $div.appendChild($div_profileDisplay);
-                    if(j%4==0){
-                        var $div_mem = document.createElement('div');
-                        $div_mem.classList.add('member');
-                        $div_mem.appendChild($div);
-                        main.appendChild($div_mem);
-                    }
-                    
-                    // if(j >= memberData[i].length){}
-                    // else{}
-                }
+            .member div {
+                flex: 1;
+                text-align: center;
             }
 
+            .profile {
+                border-radius: 50%;
+                width: 180px;
+                height: 180px;
+            }
 
-            console.log(main)
+            @media (max-width: 1221px) {
 
-        </script>
+                /*スマホ時の表示*/
+                .profile {
+                    width: 100%;
+                    height: 23vw;
+                }
+            }
+        </style>
 
 
 
-
-
-
-
-
-        <footer>
-            <div id="foot">
-                <script src="js/footer.js"></script>
-            </div>
-        </footer>
 </body>
 
 </html>
